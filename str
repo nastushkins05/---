@@ -1,0 +1,20 @@
+public class strick {
+    public static void main(String[] args) {
+
+        String firstName = "vladimir";
+        String middLemiddleName = "Vladimirivich";
+        String LastName = "Pozov";
+        String fullName = LastName + " " + firstName + " " + middLemiddleName;
+        System.out.println("ФИО " + fullName) ;
+        System.out.println("ФИО " + FullName.toUpperCase());
+        System.out.println();
+
+
+////3
+
+var fullName2 = "Иванов Семён Семёнович";
+var replaced = fullName2.replace('e'  'ё');
+System.out.println(fullName2);
+System.out.println(replaced);
+    }
+}
