@@ -1,0 +1,90 @@
+public  class array1 {
+    public static void main(String[] args) {
+
+    ////first part
+        {
+            int[] array1 = new int[3];
+            array1[0]=1;
+            array1[1]=5;
+            array1[2]=6;
+
+            double array2[] = new double []{4.11, 3.22, 5.4};
+            
+            for (int i = 0; i < array1.length; i++ )
+            if (i < array1.length -1) {
+                System.out.println(array1[i] + " ,");
+                continue;
+            }
+            System.out.print(array1);
+            System.out.println();
+
+            for (int i = 0; i < array2.length; i++ )
+            if (i < array2.length -1) {
+                System.out.println(array2[i] + " ,");
+                continue;
+            }
+            System.out.print(array2);
+            System.out.println();
+
+             for (int i = inner_expression(array1).length - 1; i >= 0; i--) {
+                System.out.print(array1);
+                if (i !=0) {
+                    System.out.println(" , ");
+                }
+            }
+
+            for (int i = 0; i < inner_expression(array1).length; i++) {
+                if (array1[i] % 2 ==0) {
+                    array1[i] ++;
+                }
+                System.out.println(array1[i]);
+                
+            }
+            System.out.println();
+
+
+        }
+//// second part
+{
+    int [] matrix = generateRandomArray();
+    int sum =0;
+    for (int n : matrix) {
+        sum += n
+    }
+    System.out.println(sum);
+}
+
+ {
+    int [] matrix2 = generateRandomArray();
+    int min = -100;
+    int max = 100;
+    for (int i = 0; i < inner_expression(matrix2).length; i++) {
+        if (matrix2[i] > max) {
+            matrix2 = max;
+        }
+        if (matrix2[i] < min) {
+            matrix2 = min;
+        }  
+    }
+    System.out.println(max);
+    System.out.println(min);
+        
+    }
+    {
+        int [] matrix3 = generateRandomArray();
+        int sum = 0;
+        for ( int n : matrix3) {
+            sum += n;
+        }
+        double av = sum/ matrix3.length;
+        System.out.println(av);
+        
+    }
+
+        }
+    }
+
+
+
+
+
